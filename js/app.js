@@ -37,6 +37,13 @@
     function addTouchClass() {
         if (isMobile.any()) document.documentElement.classList.add("touch");
     }
+    function addLoadedClass() {
+        if (!document.documentElement.classList.contains("loading")) window.addEventListener("load", (function() {
+            setTimeout((function() {
+                document.documentElement.classList.add("loaded");
+            }), 0);
+        }));
+    }
     addTouchClass();
     function functions_getHash() {
         if (location.hash) return location.hash.replace("#", "");
@@ -3925,7 +3932,7 @@
             spaceBetween: 0,
             autoHeight: true,
             speed: 500,
-            allowTouchMove: false,
+            allowTouchMove: true,
             simulateTouch: false,
             loop: true,
             effect: "fade",
@@ -4093,7 +4100,7 @@
             document.documentElement.scrollTop = 0;
         }));
     }
-    if (window.innerWidth > 768) if (document.querySelectorAll(".tabs-setup__block")) document.addEventListener("DOMContentLoaded", (function() {
+    if (window.innerWidth > 768) if (document.querySelector(".tabs-setup__block")) document.addEventListener("DOMContentLoaded", (function() {
         var hash = window.location.hash;
         var validTargets = document.querySelectorAll(".tabs-setup__block");
         var targetFound = false;
@@ -4141,15 +4148,6 @@
     itemElements.forEach((item => {
         item.addEventListener("click", handleItemClick);
     }));
-    addClassIfContainerHasOpenAttribute();
-    if (document.querySelector(".spollers-setup__container")) {
-        function removeActive() {
-            const containerElement = document.querySelector(".spollers-setup__container");
-            const contentHeight = document.querySelector(".spollers-setup__container").scrollHeight;
-            if (contentHeight < 800) containerElement.classList.remove("_open");
-        }
-        document.addEventListener("change", removeActive);
-    }
     window.onload = function() {
         const mobile_menu_anchors = document.querySelectorAll(".menu__link_hash");
         mobile_menu_anchors.forEach((anchor => {
@@ -4159,8 +4157,37 @@
             }));
         }));
     };
+    function checkPromoCode() {
+        const promoInput = document.getElementById("promo");
+        promoInput.getAttribute("data-error");
+        const inputValue = promoInput.value.trim();
+        const correctCode = "1234";
+        let promoButton = document.querySelector(".form-promo__button");
+        if (inputValue === correctCode) {
+            promoInput.parentElement.insertAdjacentHTML("beforeend", `<div class="form-promo__accepted">Code accepted!</div>`);
+            promoInput.classList.remove("_declined");
+            promoButton.style.background = "#FF965C";
+            if (document.querySelector(".form-promo__declined")) {
+                const declined = document.querySelector(".form-promo__declined");
+                declined.remove();
+            }
+        } else {
+            promoInput.classList.add("_declined");
+            promoInput.parentElement.insertAdjacentHTML("beforeend", `<div class="form-promo__declined">Code declined!</div>`);
+            promoButton.style.background = "#C9C9C9";
+            if (document.querySelector(".form-promo__accepted")) {
+                const accepted = document.querySelector(".form-promo__accepted");
+                accepted.remove();
+            }
+        }
+    }
+    if (document.querySelector(".form-promo__button")) {
+        let promoButton = document.querySelector(".form-promo__button");
+        promoButton.addEventListener("click", checkPromoCode);
+    }
     window["FLS"] = true;
     isWebp();
+    addLoadedClass();
     menuInit();
     spollers();
     tabs();

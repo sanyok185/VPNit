@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230730190605">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230810083010">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,149 +51,151 @@
 				</div>
 			</section>
 			<section class="page__order order">
-				<form class="order__form form" method="">
-					<div class="order__container">
-						<div class="order__summary summary">
-							<h2 class="summary__title title-form">
-								Order Summary
-							</h2>
-							<table class="summary__table">
-								<thead class="summary__head">
-									<tr>
-										<th>Item</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="summary__access">
-										<td>12 Months of VPN access</td>
-										<td>$100.00</td>
-									</tr>
-									<tr class="summary__fees">
-										<td>Setup Fees</td>
-										<td>$0.00</td>
-									</tr>
-									<tr class="summary__total">
-										<td>Total Due:</td>
-										<td><b>$100.00</b></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="order__promo promo">
-							<div class="promo__form">
-								<h2 class="promo__title title-form">
-									Promo Code
+				<div class="order__container">
+					<div class="order__summary summary">
+						<h2 class="summary__title title-form">
+							Order Summary
+						</h2>
+						<table class="summary__table">
+							<thead class="summary__head">
+								<tr>
+									<th>Item</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="summary__access">
+									<td>12 Months of VPN access</td>
+									<td>$100.00</td>
+								</tr>
+								<tr class="summary__fees">
+									<td>Setup Fees</td>
+									<td>$0.00</td>
+								</tr>
+								<tr class="summary__total">
+									<td>Total Due:</td>
+									<td><b>$100.00</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="order__promo promo">
+						<form action="" class="promo__form form-promo">
+							<h3 class="form-promo__title title-form">
+								Promo Code
+							</h3>
+							<div class="form-promo__body">
+								<input type="text" class="form-promo__input input" name="promo" id="promo" data-error="Code declined">
+								<button type="button" class="form-promo__button">Apply</button>
+							</div>
+						</form>
+					</div>
+					<div action="" class="order__payment payment">
+						<form class="payment-form form-payment">
+							<div class="form-payment__method method">
+								<h2 class="method__title title-form">
+									Payment Method
 								</h2>
-								<input type="text" class="promo__input input" name="promo" id="promo" data-error="Code declined">
-							</div>
-						</div>
-						<div class="order__method method">
-							<h2 class="method__title title-form">
-								Payment Method
-							</h2>
-							<div class="method__name" id="method__name">Card</div>
-							<div class="method__options options">
-								<div class="options__item">
-									<input type="radio" value="1" name="option" id="r1" class="options__input">
-									<label for="r1" class="options__label"><picture><source srcset="img/Checkout/Method/01.webp" type="image/webp"><img src="img/Checkout/Method/01.png" alt="Visa"></picture></label>
+								<div class="method__name" id="method__name">Card</div>
+								<div class="method__options options">
+									<div class="options__item">
+										<input type="radio" value="1" name="option" id="r1" class="options__input">
+										<label for="r1" class="options__label"><picture><source srcset="img/Checkout/Method/01.webp" type="image/webp"><img src="img/Checkout/Method/01.png" alt="Visa"></picture></label>
+									</div>
+									<div class="options__item">
+										<input type="radio" value="2" name="option" id="r2" class="options__input">
+										<label for="r2" class="options__label"><picture><source srcset="img/Checkout/Method/02.webp" type="image/webp"><img src="img/Checkout/Method/02.png" alt="Mastercard"></picture></label>
+									</div>
+									<div class="options__item">
+										<input type="radio" value="3" name="option" id="r3" class="options__input">
+										<label for="r3" class="options__label"><picture><source srcset="img/Checkout/Method/03.webp" type="image/webp"><img src="img/Checkout/Method/03.png" alt="Maestro"></picture></label>
+									</div>
+									<div class="options__item">
+										<input type="radio" value="4" name="option" id="r4" class="options__input">
+										<label for="r4" class="options__label"><picture><source srcset="img/Checkout/Method/05.webp" type="image/webp"><img src="img/Checkout/Method/05.png" alt="American Express"></picture></label>
+									</div>
+									<div class="options__item">
+										<input type="radio" value="5" name="option" id="r5" class="options__input">
+										<label for="r5" class="options__label"><picture><source srcset="img/Checkout/Method/04.webp" type="image/webp"><img src="img/Checkout/Method/04.png" alt="PayPal"></picture></label>
+									</div>
 								</div>
-								<div class="options__item">
-									<input type="radio" value="2" name="option" id="r2" class="options__input">
-									<label for="r2" class="options__label"><picture><source srcset="img/Checkout/Method/02.webp" type="image/webp"><img src="img/Checkout/Method/02.png" alt="Mastercard"></picture></label>
-								</div>
-								<div class="options__item">
-									<input type="radio" value="3" name="option" id="r3" class="options__input">
-									<label for="r3" class="options__label"><picture><source srcset="img/Checkout/Method/03.webp" type="image/webp"><img src="img/Checkout/Method/03.png" alt="Maestro"></picture></label>
-								</div>
-								<div class="options__item">
-									<input type="radio" value="4" name="option" id="r4" class="options__input">
-									<label for="r4" class="options__label"><picture><source srcset="img/Checkout/Method/05.webp" type="image/webp"><img src="img/Checkout/Method/05.png" alt="American Express"></picture></label>
-								</div>
-								<div class="options__item">
-									<input type="radio" value="5" name="option" id="r5" class="options__input">
-									<label for="r5" class="options__label"><picture><source srcset="img/Checkout/Method/04.webp" type="image/webp"><img src="img/Checkout/Method/04.png" alt="PayPal"></picture></label>
-								</div>
-							</div>
-							<div class="method__holder">
-								<div class="method__item">
-									<label for="holdername" class="label-form">CARD HOLDER'S NAME</label>
-									<input autocomplete="off" type="text" name="holdername" data-error="You didn’t specify valid card holder’s name." placeholder="" class="input" id="holdername" data-required>
-								</div>
-
-								<div class="method__card">
-									<div class="method__item method__card-number">
-										<label for="card-number" class="label-form">CARD NUMBER</label>
-										<input autocomplete="off" type="tel" name="cardnumber" data-error="You didn’t specify valid card number." placeholder="" class="input" id="cardnumber" maxlength="16" data-required>
+								<div class="method__holder">
+									<div class="method__item">
+										<label for="holdername" class="label-form">CARD HOLDER'S NAME</label>
+										<input autocomplete="off" type="text" name="holdername" data-error="You didn’t specify valid card holder’s name." placeholder="" class="input" id="holdername" data-required>
 									</div>
 
-									<div class="method__ccv">
-										<div>
-											<label for="ccv" class="label-form">CCV</label>
-											<input autocomplete="off" type="tel" name="ccv" data-error="You didn’t specify valid CVV" placeholder="" class="input" id="ccv" maxlength="4" data-required>
+									<div class="method__card">
+										<div class="method__item method__card-number">
+											<label for="card-number" class="label-form">CARD NUMBER</label>
+											<input autocomplete="off" type="tel" name="cardnumber" data-error="You didn’t specify valid card number." placeholder="" class="input" id="cardnumber" maxlength="16" data-required>
 										</div>
-										<div class="method__how how">
-											<div class="how__icon" id="icon">?</div>
-											<div class="how__text" id="text">CVV is a three digital number
-												on the back of your Credit Card</div>
+
+										<div class="method__ccv">
+											<div>
+												<label for="ccv" class="label-form">CCV</label>
+												<input autocomplete="off" type="tel" name="ccv" data-error="You didn’t specify valid CVV" placeholder="" class="input" id="ccv" maxlength="4" data-required>
+											</div>
+											<div class="method__how how">
+												<div class="how__icon" id="icon">?</div>
+												<div class="how__text" id="text">CVV is a three digital number
+													on the back of your Credit Card</div>
+											</div>
 										</div>
+
 									</div>
-
-								</div>
-								<label for="date" class="label-form">EXPIRATION DATE, MM YY
-								</label>
-								<div class="method__date">
-									<div class="method__item method__item_1"><input type="tel" name="datemonth" data-error="You didn’t specify valid expiration date." class="input" id="date" maxlength="2" data-required pattern="[0-9]*"></div>
-									<div><input type="tel" name="dateyear" data-error="" class="input" id="date" maxlength="2" data-required pattern="[0-9]*"></div>
-								</div>
-							</div>
-						</div>
-						<div class="order__mail mail">
-							<h2 class="mail__title title-form">
-								Send letter to Email
-							</h2>
-							<div class="mail__items">
-								<div class="mail__item">
-									<label for="email" class="label-form">EMAIL ADDRESS</label>
-									<input autocomplete="off" type="email" name="email" data-error="You didn’t specify valid email." placeholder="" class="input" id="email" data-required>
-								</div>
-								<div class="mail__item">
-									<label for="email" class="label-form">REPEAT EMAIL ADDRESS</label>
-									<input autocomplete="off" type="email" name="email" data-error="You didn’t specify valid email confirmation." placeholder="" class="input" id="email">
+									<label for="date" class="label-form">EXPIRATION DATE, MM YY
+									</label>
+									<div class="method__date">
+										<div class="method__item method__item_1"><input type="tel" name="datemonth" data-error="You didn’t specify valid expiration date." class="input" id="date" maxlength="2" data-required pattern="[0-9]*"></div>
+										<div><input type="tel" name="dateyear" data-error="" class="input" id="date" maxlength="2" data-required pattern="[0-9]*"></div>
+									</div>
 								</div>
 							</div>
-						</div>
+							<div class="form-payment__mail mail">
+								<h2 class="mail__title title-form">
+									Send letter to Email
+								</h2>
+								<div class="mail__items">
+									<div class="mail__item">
+										<label for="email" class="label-form">EMAIL ADDRESS</label>
+										<input autocomplete="off" type="email" name="email" data-error="You didn’t specify valid email." placeholder="" class="input" id="email" data-required>
+									</div>
+									<div class="mail__item">
+										<label for="email" class="label-form">REPEAT EMAIL ADDRESS</label>
+										<input autocomplete="off" type="email" name="email" data-error="You didn’t specify valid email confirmation." placeholder="" class="input" id="email">
+									</div>
+								</div>
+							</div>
+							<div class="form-payment__comment">
+								<ul class="comment__notes">
+									<li class="comment__note">
+										Transactions with promo code are final and not a subject for the refund.
+									</li>
+									<li class="comment__note">
+										VPNit does not provide a subscription on a monthly or any other basis. All the plans are paid one time with one charge only.
+									</li>
+									<li class="comment__note">
+										Please note that after a successful transaction the following descriptor will appear in your statement: VPNIT.COM
+									</li>
+								</ul>
+							</div>
+							<div class="form-payment__checkbox checkbox">
+								<div class="order__terms checkbox">
+									<input type="checkbox" class="checkbox__input input" id="terms" data-required checked>
+									<label for="terms" class="checkbox__label">
+										<div>Yes, I have read and agree <span>to</span> <span>the</span> <a href="privacy.html#tab-0-1">Terms of Service</a></div>
+									</label>
+								</div>
+								<div class="order__buttons">
+									<button type="submit" class="order__button">Complete Order</button>
+									<button type="submit" class="order__paypal"><picture><source srcset="img/Checkout/PayPal-button.webp" type="image/webp"><img src="img/Checkout/PayPal-button.png" alt="PayPal"></picture></button>
+								</div>
+							</div>
+						</form>
 					</div>
-					<div class="order__comment">
-						<ul class="order__notes">
-							<li class="order__note">
-								Transactions with promo code are final and not a subject for the refund.
-							</li>
-							<li class="order__note">
-								VPNit does not provide a subscription on a monthly or any other basis. All the plans are paid one time with one charge only.
-							</li>
-							<li class="order__note">
-								Please note that after a successful transaction the following descriptor will appear in your statement: VPNIT.COM
-							</li>
-						</ul>
-					</div>
-					<div class="checkbox__container">
-						<div class="order__terms checkbox">
-							<input type="checkbox" class="checkbox__input input" id="terms" data-required checked>
-							<label for="terms" class="checkbox__label">
-								<div>Yes, I have read and agree to <span>the</span> <a href="#">Terms of Service</a></div>
-							</label>
-						</div>
-						<div class="order__buttons">
-							<button type="submit" class="order__button">Complete Order</button>
-							<button type="submit" class="order__paypal"><picture><source srcset="img/Checkout/PayPal-button.webp" type="image/webp"><img src="img/Checkout/PayPal-button.png" alt="PayPal"></picture></button>
-						</div>
-					</div>
-
-				</form>
-
+				</div>
 			</section>
-
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -220,7 +222,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230730190605"></script>
+	<script src="js/app.min.js?_v=20230810083010"></script>
 
 </body>
 
