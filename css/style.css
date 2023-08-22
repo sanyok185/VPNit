@@ -4265,6 +4265,22 @@ button.swiper-pagination-bullet {
     padding: 4.375rem 0.9375rem 1.875rem 0.9375rem;
   }
 
+  .features__top_body {
+    background: none;
+  }
+
+  .features__top_body::before {
+    content: url("../img/Features/background-top-small.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0.65);
+        -ms-transform: scale(0.65);
+            transform: scale(0.65);
+    top: -6.25rem;
+    left: -3.625rem;
+  }
+
   .features__top {
     background-size: 550%;
   }
