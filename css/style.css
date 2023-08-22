@@ -1100,9 +1100,6 @@ textarea.input {
   overflow: visible;
 }
 
-.no-webp .features__top_body{
-  background: url("../img/Features/background-top.png") repeat-x 50.5% -1.0625rem; }
-
 .features__top_body {
   width: 100%;
   height: calc(100% + 1.25rem);
@@ -2555,6 +2552,11 @@ button.swiper-pagination-bullet {
 
 .bullet-green {
   border-color: #93E7C0;
+}
+
+@media (min-width: 29.99875em) {
+  .no-webp .features__top_body{
+    background: url("../img/Features/background-top.png") repeat-x 50.5% -1.0625rem; }
 }
 
 @media (min-width: 37.5em) {
@@ -4265,10 +4267,6 @@ button.swiper-pagination-bullet {
     padding: 4.375rem 0.9375rem 1.875rem 0.9375rem;
   }
 
-  .features__top_body {
-    background: none;
-  }
-
   .features__top_body::before {
     content: url("../img/Features/background-top-small.png");
     position: absolute;
@@ -5942,7 +5940,10 @@ button.swiper-pagination-bullet {
 
 .webp .features{ background: url(../img/Features/background-bottom.webp) repeat-x 50% 100%; }
 
-.webp .features__top_body{ background: url(../img/Features/background-top.webp) repeat-x 50.5% -1.0625rem; }
+@media (min-width: 29.99875em){
+
+  .webp .features__top_body{ background: url(../img/Features/background-top.webp) repeat-x 50.5% -1.0625rem; }
+}
 
 @media (max-width: 47.99875em){
 
