@@ -1115,9 +1115,9 @@ textarea.input {
 
 .features__top::before {
   content: "";
-  height: 100%;
+  height: calc(100% + 1.25rem);
   width: 100%;
-  top: 0;
+  top: -1.25rem;
   left: 0;
   background-color: #fafafa;
   z-index: 1;
