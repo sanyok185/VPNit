@@ -868,7 +868,7 @@ textarea.input {
 }
 
 .footer__body_home {
-  border: none;
+  border: none !important;
 }
 
 .footer__copy {
@@ -905,7 +905,7 @@ textarea.input {
 }
 
 .main__slide_1 {
-  background: #C4E1F7;
+  background: #c4e1f7;
 }
 
 .main__slide_1 .main__image {
@@ -913,7 +913,7 @@ textarea.input {
 }
 
 .main__slide_2 {
-  background: #FFDAB2;
+  background: #ffdab2;
 }
 
 .main__slide_2 .main__image {
@@ -922,7 +922,7 @@ textarea.input {
 }
 
 .main__slide_3 {
-  background: #E7C6D8;
+  background: #e7c6d8;
 }
 
 .main__slide_3 .main__image {
@@ -931,7 +931,7 @@ textarea.input {
 }
 
 .main__slide_4 {
-  background: #93E7C0;
+  background: #93e7c0;
 }
 
 .main__slide_4 .main__image {
@@ -945,7 +945,7 @@ textarea.input {
 }
 
 .main__title {
-  color: #FFF;
+  color: #fff;
   font-weight: 700;
   line-height: normal;
   max-width: 43.75rem;
@@ -954,7 +954,7 @@ textarea.input {
 }
 
 .main__text {
-  color: #FFF;
+  color: #fff;
   font-weight: 600;
   margin-top: 0.625rem;
   z-index: 2;
@@ -962,7 +962,7 @@ textarea.input {
 }
 
 .no-webp .prices{
-  background: url("../img/map.png") center; }
+  background: url("../img/map.png") center/cover no-repeat; }
 
 .prices {
   position: relative;
@@ -991,8 +991,8 @@ textarea.input {
 }
 
 .card-prices__head {
-  background: #99D5ED;
-  color: #FFF;
+  background: #99d5ed;
+  color: #fff;
   text-align: center;
   font-weight: 600;
   padding-top: 1.8125rem;
@@ -1014,7 +1014,7 @@ textarea.input {
 .card-prices__body {
   padding: 1.1875rem 0.75rem 0.75rem 0.75rem;
   height: 19.1875rem;
-  background: #FEFFFF;
+  background: #feffff;
 }
 
 .card-prices__list {
@@ -1032,7 +1032,7 @@ textarea.input {
 }
 
 .card-prices__item {
-  color: #747E8F;
+  color: #747e8f;
   font-size: 0.8125rem;
   font-weight: 600;
   line-height: 135%;
@@ -1049,10 +1049,10 @@ textarea.input {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 1.75rem;
-  background: #FF965C;
+  background: #ff965c;
   height: 2.6875rem;
   width: 100%;
-  color: #FFF;
+  color: #fff;
   font-size: 1.0625rem;
   font-weight: 600;
   -webkit-transition: all 0.3s;
@@ -1072,17 +1072,17 @@ textarea.input {
 }
 
 .card-prices.highlighted .card-prices__head {
-  background: #9D7AB4;
+  background: #9d7ab4;
 }
 
 .card-prices.highlighted .card-prices__body {
   position: relative;
-  background: #EADAF4;
+  background: #eadaf4;
 }
 
 .card-prices.highlighted .card-prices__button {
-  background: #FFF;
-  color: #FF965C;
+  background: #fff;
+  color: #ff965c;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -1122,13 +1122,13 @@ textarea.input {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   z-index: 1;
   position: absolute;
 }
 
 .features__title {
-  color: #6C6565;
+  color: #6c6565;
   text-align: center;
   font-weight: 600;
 }
@@ -1217,15 +1217,15 @@ textarea.input {
 }
 
 .item-features__image_red {
-  background-color: #FDF2E2;
+  background-color: #fdf2e2;
 }
 
 .item-features__image_green {
-  background-color: #F5FAF0;
+  background-color: #f5faf0;
 }
 
 .item-features__title {
-  color: #767F8E;
+  color: #767f8e;
   font-size: 1.0625rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
@@ -1240,7 +1240,7 @@ textarea.input {
 }
 
 .system {
-  background: #F3ECF8;
+  background: #f3ecf8;
 }
 
 .system__items {
@@ -1272,11 +1272,11 @@ textarea.input {
 }
 
 .system__item:active {
-  background: #A98BBD;
+  background: #a98bbd;
 }
 
 .system__name {
-  color: #D9CADC;
+  color: #d9cadc;
   font-size: 0.875rem;
   font-weight: 700;
 }
@@ -1801,7 +1801,7 @@ textarea.input {
           justify-content: center;
   padding: 0.625rem;
   color: #989898;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 15;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-size: 0.8125rem;
@@ -1827,7 +1827,7 @@ textarea.input {
           justify-content: center;
   padding: 0.625rem;
   color: #989898;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 15;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-size: 0.8125rem;
@@ -1838,7 +1838,7 @@ textarea.input {
 }
 
 .tabs-setup__subtitle {
-  background-color: #FFF;
+  background-color: #fff;
   height: 3.375rem;
   position: relative;
   border: 1px solid #cbcbcb;
@@ -1971,9 +1971,6 @@ textarea.input {
   width: 2.5rem;
   height: 2.5rem;
   background: #9d7ab4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1984,6 +1981,19 @@ textarea.input {
   transition: all 0.2s ease;
   text-align: center;
   border-bottom: 1px solid #836596;
+}
+
+.body-tabs__top._center {
+  -webkit-transform: translate(50%, -100%);
+      -ms-transform: translate(50%, -100%);
+          transform: translate(50%, -100%);
+  right: 50%;
+}
+
+.body-tabs__top._right {
+  -webkit-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+          transform: translate(0, -100%);
 }
 
 .footer-setup .footer__container {
@@ -1998,8 +2008,17 @@ textarea.input {
   padding-bottom: 6.25rem;
 }
 
+.spollers-setup__item {
+  position: relative;
+  z-index: 4;
+}
+
+.spollers-setup__item[open]:first-child {
+  border-top: 0.0625rem solid #c9c9c9;
+}
+
 .spollers-setup__title {
-  list-style-type: none;
+  border-bottom: 0.0625rem solid #c9c9c9;
   list-style: none;
   height: 3.8125rem;
   display: -webkit-box;
@@ -2014,6 +2033,7 @@ textarea.input {
 }
 
 .spollers-setup__subtitle {
+  border-bottom: 0.0625rem solid #c9c9c9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2023,7 +2043,7 @@ textarea.input {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background: #F5F2F7;
+  background: #f5f2f7;
 }
 
 .spollers-setup__subtitle::before {
@@ -2032,7 +2052,7 @@ textarea.input {
 }
 
 .spollers-setup__subtitle._spoller-active {
-  color: #FFF;
+  color: #fff;
   background: rgba(157, 122, 178, 0.6);
 }
 
@@ -2043,7 +2063,7 @@ textarea.input {
   -webkit-transform-origin: 60%;
       -ms-transform-origin: 60%;
           transform-origin: 60%;
-  color: #FFF;
+  color: #fff;
 }
 
 .questions__spollers {
@@ -2724,6 +2744,12 @@ button.swiper-pagination-bullet {
     margin-top: 1.75rem;
   }
 
+  .body-tabs__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .policy__container {
     padding-bottom: 4.8125rem;
   }
@@ -3107,6 +3133,10 @@ button.swiper-pagination-bullet {
 
   .body-tabs__block {
     padding-bottom: 2.125rem;
+  }
+
+  .body-tabs__top._right {
+    right: 8.125rem;
   }
 
   .body-tabs__top {
@@ -3581,6 +3611,10 @@ button.swiper-pagination-bullet {
     padding-bottom: 1.875rem;
   }
 
+  .body-tabs__top._right {
+    right: 0.625rem;
+  }
+
   .body-tabs__top {
     right: 0.625rem;
   }
@@ -3806,7 +3840,7 @@ button.swiper-pagination-bullet {
   }
 
   .no-webp .prices{
-    background: url("../img/map-mobile.png") center no-repeat; }
+    background: url("../img/map-mobile.png") center/cover no-repeat; }
 
   .prices {
     background-position: 30% 0;
@@ -3918,20 +3952,15 @@ button.swiper-pagination-bullet {
             flex-direction: column;
   }
 
-  .tabs-setup__navigation {
-    border-bottom: 1px solid #c9c9c9;
-  }
-
   .tabs-setup__title {
     width: 100%;
     font-size: 1.125rem;
     text-align: left;
-    border-top: 1px solid #C9C9C9;
     padding-left: 2.25rem;
   }
 
   .tabs-setup__title::before {
-    color: #C9C9C9;
+    color: #c9c9c9;
     position: absolute;
     top: 1.375rem;
     height: 1.25rem;
@@ -3940,8 +3969,8 @@ button.swiper-pagination-bullet {
   }
 
   .tabs-setup__title._tab-active {
-    background: #9D7AB2;
-    color: #FFF;
+    background: #9d7ab2;
+    color: #fff;
   }
 
   .tabs-setup__title._tab-active::before {
@@ -3951,19 +3980,19 @@ button.swiper-pagination-bullet {
     -webkit-transform-origin: 60%;
         -ms-transform-origin: 60%;
             transform-origin: 60%;
-    color: #FFF;
+    color: #fff;
   }
 
   .tabs-setup__title-windows {
     width: 100%;
     font-size: 1.125rem;
     text-align: left;
-    border-top: 1px solid #C9C9C9;
+    border-top: 1px solid #c9c9c9;
     padding-left: 2.25rem;
   }
 
   .tabs-setup__title-windows::before {
-    color: #C9C9C9;
+    color: #c9c9c9;
     position: absolute;
     top: 1.375rem;
     height: 1.25rem;
@@ -3972,8 +4001,8 @@ button.swiper-pagination-bullet {
   }
 
   .tabs-setup__title-windows._tab-active {
-    background: #9D7AB2;
-    color: #FFF;
+    background: #9d7ab2;
+    color: #fff;
   }
 
   .tabs-setup__title-windows._tab-active::before {
@@ -3983,14 +4012,14 @@ button.swiper-pagination-bullet {
     -webkit-transform-origin: 60%;
         -ms-transform-origin: 60%;
             transform-origin: 60%;
-    color: #FFF;
+    color: #fff;
   }
 
   .tabs-setup__subtitle {
     width: 100%;
-    background: #F5F2F7;
+    background: #f5f2f7;
     border: none;
-    border-bottom: 1px solid #C9C9C9;
+    border-bottom: 1px solid #c9c9c9;
     font-size: 1.125rem;
     padding-left: 2.25rem;
   }
@@ -4043,6 +4072,10 @@ button.swiper-pagination-bullet {
   }
 
   .body-tabs__top {
+    display: none;
+  }
+
+  .body-tabs__top {
     top: -1.875rem;
   }
 
@@ -4050,14 +4083,13 @@ button.swiper-pagination-bullet {
     width: 100%;
     font-size: 1.125rem;
     text-align: left;
-    border-bottom: 1px solid #C9C9C9;
     padding-left: 2.25rem;
   }
 
   .spollers-setup__title::before {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: #C9C9C9;
+    color: #c9c9c9;
     position: absolute;
     top: 1.375rem;
     height: 1.25rem;
@@ -4066,8 +4098,8 @@ button.swiper-pagination-bullet {
   }
 
   .spollers-setup__title._spoller-active {
-    background: #9D7AB2;
-    color: #FFF;
+    background: #9d7ab2;
+    color: #fff;
   }
 
   .spollers-setup__title._spoller-active::before {
@@ -4077,7 +4109,7 @@ button.swiper-pagination-bullet {
     -webkit-transform-origin: 60%;
         -ms-transform-origin: 60%;
             transform-origin: 60%;
-    color: #FFF;
+    color: #fff;
   }
 
   ._spoller-init .questions__title::before {
@@ -4260,6 +4292,10 @@ button.swiper-pagination-bullet {
 
   .item-features__text {
     max-width: 75%;
+  }
+
+  .body-tabs__title {
+    padding-right: 1.25rem;
   }
 
   .body-tabs__text {
@@ -5293,6 +5329,18 @@ button.swiper-pagination-bullet {
 }
 
 @supports (right: clamp( 0.625rem , -2.7083333333rem  +  16.6666666667vw , 8.125rem )) {
+    .body-tabs__top._right {
+      right: clamp( 0.625rem , -2.7083333333rem  +  16.6666666667vw , 8.125rem );
+    }
+}
+
+@supports not (right: clamp( 0.625rem , -2.7083333333rem  +  16.6666666667vw , 8.125rem )) {
+    .body-tabs__top._right {
+      right: calc(0.625rem + 7.5 * (100vw - 20rem) / 45);
+    }
+}
+
+@supports (right: clamp( 0.625rem , -2.7083333333rem  +  16.6666666667vw , 8.125rem )) {
     .body-tabs__top {
       right: clamp( 0.625rem , -2.7083333333rem  +  16.6666666667vw , 8.125rem );
     }
@@ -5812,12 +5860,12 @@ button.swiper-pagination-bullet {
   }
 
   .card-prices.highlighted .card-prices__button:hover {
-    color: #FFF;
-    background: #FF965C;
+    color: #fff;
+    background: #ff965c;
   }
 
   .system__item:hover {
-    background: #A98BBD;
+    background: #a98bbd;
   }
 
   .order__terms label a:hover {
@@ -5840,8 +5888,8 @@ button.swiper-pagination-bullet {
   }
 
   .tabs-setup__title:hover {
-    background: #9D7AB2;
-    color: #FFF;
+    background: #9d7ab2;
+    color: #fff;
   }
 
   .tabs-setup__title-windows:hover .tabs-setup__subnavigation {
@@ -5851,8 +5899,8 @@ button.swiper-pagination-bullet {
   }
 
   .tabs-setup__title-windows:hover {
-    background: #9D7AB2;
-    color: #FFF;
+    background: #9d7ab2;
+    color: #fff;
   }
 
   .body-tabs__top:hover {
@@ -5874,7 +5922,7 @@ button.swiper-pagination-bullet {
   }
 }
 
-.webp .prices{ background: url(../img/map.webp) center; }
+.webp .prices{ background: url(../img/map.webp) center/cover no-repeat; }
 
 .webp .features{ background: url(../img/Features/background-bottom.webp) repeat-x 50% 100%; }
 
@@ -5882,5 +5930,5 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 47.99875em){
 
-  .webp .prices{ background: url(../img/map-mobile.webp) center no-repeat; }
+  .webp .prices{ background: url(../img/map-mobile.webp) center/cover no-repeat; }
 }
