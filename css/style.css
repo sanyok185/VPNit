@@ -110,6 +110,19 @@ h6 {
   font-size: inherit;
 }
 
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary:first-of-type {
+  list-style: none;
+}
+
+summary {
+  list-style: none;
+  list-style-type: none;
+}
+
 body {
   opacity: 0;
 }
